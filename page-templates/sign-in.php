@@ -4,7 +4,7 @@
  */
 get_header();
 ?>
-<section class="sign-in-form">
+<section class="sign-in-form lk-relative">
     <div class="lk-row">
         <div class="lk-col-5 lk-relative">
             <div class="form-left-bg"></div>
@@ -36,12 +36,12 @@ get_header();
                                             <div class="form-check">
                                                 <span>
                                                     <input type="text" class="checkbox" id="account" name="Create an Account?">
-                                                    <label for="account"></label>
+                                                    <label for="account">Remember Me</label>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="lk-col-6">
-                                            <div class="forget-password">
+                                            <div class="forget-password text-right">
                                                 <a href="#">Forgot Password ?</a>
                                             </div>
                                         </div>
@@ -53,7 +53,7 @@ get_header();
                                 <div class="lk-col-12">
                                     <div class="sign-up-text">
                                         <span>
-                                            "Don't have an account?"
+                                            Don't have an account?
                                             <a href="#" id="sign-up">Sign Up</a>
                                         </span>
                                     </div>
