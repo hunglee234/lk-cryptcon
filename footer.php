@@ -5,12 +5,10 @@
                 <div class="lk-col-4">
                     <div class="footer-logo">
                         <a href="index.html">
-                            <img src="<?php echo get_template_directory_uri() ?> /assets/images/logo.png ?>" alt="">
+                            <img src="<?php echo get_field('logo_main','option') ?>" alt="">
                         </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Est pariatur officia maxime blanditiis necessitatibus neque esse, 
-                            minus eius commodi quos ducimus culpa placeat quasi rerum voluptatem, 
-                            harum nesciunt tempora voluptatibus.s
+                        <p>
+                            <?php echo get_field('desc_cryptcon','option') ?>
                         </p>
                         <div class="contact-social">
                             <ul class="social-icon">
@@ -89,13 +87,19 @@
                                 <h3 class="footer-title">Information</h3>
                                 <ul>
                                     <li>
-                                        <a href="#">+09696 234 98</a>
+                                        <a href="#">
+                                            <?php echo get_field('hotline_main','option') ?>
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">info@example.com</a>
+                                        <a href="#">
+                                            <?php echo get_field('email_main','option') ?>
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">103 Bạch Đằng, Phường 2, Quận Tân Bình, TP Hồ Chí Minh</a>
+                                        <a href="#">
+                                            <?php echo get_field('address_main','option') ?>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

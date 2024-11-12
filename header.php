@@ -10,7 +10,9 @@
         <div class="container">
             <div class="lk-row">
                 <div class="header-logo lk-col-6">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo">
+                    <a href="<?php echo site_url(); ?>" class="logo">
+                        <img src="<?php echo get_field('logo_main','option') ?>" alt="Logo">
+                    </a>
                 </div>
                 <div class="nav-menu lk-col-6">
                     <ul class="list-button">

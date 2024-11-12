@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * template name: Home Page
+ */
+// get_header(); ?>
 <section class="home-banner">
     <div class="container">
         <div class="lk-row">
