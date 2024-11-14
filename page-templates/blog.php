@@ -1,6 +1,6 @@
 <?php
 /**
- * template name: Blog
+ * template name: Blog Page
  */
 get_header(); ?>
 <section class="lk-blog ptb-200">
@@ -22,23 +22,68 @@ get_header(); ?>
         <div class="lk-row">
             <div class="lk-col-8">
                 <div class="blog-list-part">
-                    <div class="blog-list-box">
-                        <div class="blog-list-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
+                    <?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 4,
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'paged' => $paged
+                    );
+
+                    $query = new WP_Query($args);
+                    if ($query->have_posts()) :
+                        while ($query->have_posts()) : $query->the_post();
+                    ?>
+                        <div class="blog-list-box">
+                            <div class="blog-list-img">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php 
+                                    the_post_thumbnail('full');
+                                    ?>
+                                </a>
+                            </div>
+                            <div class="blog-list-detail">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <span class="lk-date"><?php echo get_the_date('d F, Y'); ?></span>
+                                    </li>
+                                    <li>
+                                        <span class="lk-author"><?php echo get_the_author(); ?></span>
+                                    </li>
+                                </ul>
+                                <a href="<?php the_permalink(); ?>" class="blog-list-title">
+                                    <?php the_title(); ?>
+                                </a>
+                                <a href="<?php the_permalink(); ?>" class="read-more-btn">
+                                    <span>Read More</span>
+                                    <img src="<?php echo get_field('arrow_right','option') ?>" alt="arrow-right">
+                                </a>
+                            </div>
                         </div>
-                        <div class="blog-list-detail">
-                            <ul class="blog-meta">
-                                <li>18 Januray, 2022</li>
-                                <li>By Khắc Hùng</li>
-                            </ul>
-                            <a href="#" class="blog-list-title">Cryptcon is a clean, modern and crypto specific HTML template</a>
-                            <a href="#" class="read-more">
-                                <span>Read More</span>
-                                <img src="" alt="">
-                            </a>
-                        </div>
+             
+                    <?php 
+                        endwhile;
+                        wp_reset_postdata();
+                    else:
+                        echo '<p>Không có bài viết nào</p>';
+                    endif;
+                    ?>
+                           <!-- Phân trang -->
+                    <div class="lk-pagination">
+                        <ul>
+                            <?php 
+                            echo paginate_links(array(
+                                'total' => $query->max_num_pages,
+                                'current' => $paged,
+                                'prev_text' => '<i class="fa-solid fa-arrow-left"></i>',
+                                'next_text' => '<i class="fa-solid fa-arrow-right"></i>',
+                                'type' => 'list'
+                            ));
+                            ?>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -150,4 +195,5 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<?php get_template_part( 'sections/newsletter') ?>
 <?php get_footer(); ?>

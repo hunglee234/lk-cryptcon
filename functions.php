@@ -40,7 +40,8 @@ foreach ($file_includes as $file) {
 }
 unset($file, $filePath);
 
-add_theme_support( 'post-thumbnails' )
+add_theme_support( 'post-thumbnails' );
+
 
 ?>
 
