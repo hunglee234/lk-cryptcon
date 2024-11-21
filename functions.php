@@ -5,6 +5,19 @@ function my_basic_theme_enqueue_scripts() {
 
     // Đăng ký tệp main.css
     wp_enqueue_style('main-css', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0', 'all');
+
+    // Đăng ký tệp javascript 
+    wp_enqueue_script(
+        'lk-main-js', 
+        get_template_directory_uri() . '/assets/js/main.js', 
+        array(), 
+        null, 
+        true 
+    );
+
+    //Owl Carousel
+    wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), null, true );
+
 }
 
 // Thêm action để enqueue scripts
@@ -41,6 +54,21 @@ foreach ($file_includes as $file) {
 unset($file, $filePath);
 
 add_theme_support( 'post-thumbnails' );
+
+
+function enqueue_owl_carousel_assets() {
+    // Nạp jQuery (WordPress đã bao gồm jQuery sẵn)
+    wp_enqueue_script('jquery');
+    
+    // Nạp Owl Carousel JS
+    wp_enqueue_script('owl-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery'), null, true);
+
+    // Nạp Owl Carousel CSS
+    wp_enqueue_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+    wp_enqueue_style('owl-theme-default', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_owl_carousel_assets');
 
 
 ?>

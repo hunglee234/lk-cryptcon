@@ -43,16 +43,16 @@
                                 <h3 class="footer-title">Our Pages</h3>
                                 <ul>
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="<?php echo home_url(); ?>">Home</a>
                                     </li>
                                     <li>
                                         <a href="index.html">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="index.html">Blog</a>
+                                        <a href="<?php echo get_permalink( get_option( 'page_for_posts')); ?>">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="index.html">Contact</a>
+                                        <a href="<?php echo get_permalink( get_page_by_path('contact')); ?>">Contact</a>
                                     </li>
                                     <li>
                                         <a href="index.html">Team</a>
