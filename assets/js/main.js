@@ -66,40 +66,25 @@ window.onload = function () {
   }, 3000);
 };
 
-jQuery(document).ready(function ($) {
-  $(".team-slider").owlCarousel({
-    loop: false,
+jQuery(document).ready(function () {
+  jQuery(".team-slider").owlCarousel({
+    items: 3,
     nav: false,
     dots: false,
-    items: 3,
-    smartSpeed: 900,
+    loop: false, // Cho phép quay vòng
     responsiveClass: true,
-    autoplay: false,
+    autoplay: false, // Tự động chạy
+    autoplayTimeout: 3000, // Thời gian tự động chuyển slide
+  });
+
+  jQuery(".testimonial-slider").owlCarousel({
+    items: 4,
+    nav: true,
+    dots: false,
+    loop: false, // Cho phép quay vòng
+    responsiveClass: true,
     margin: 40,
-    touchDrag: false,
-    mouseDrag: false,
-    responsive: {
-      0: {
-        items: 1,
-        loop: true,
-        nav: true,
-        dots: false,
-        touchDrag: true,
-        mouseDrag: true,
-      },
-      600: {
-        items: 2,
-        loop: true,
-        dots: false,
-        nav: true,
-        touchDrag: true,
-        mouseDrag: true,
-      },
-      992: {
-        items: 3,
-        dots: false,
-        nav: false,
-      },
-    },
+    autoplay: false, // Tự động chạy
+    autoplayTimeout: 3000, // Thời gian tự động chuyển slide
   });
 });

@@ -9,7 +9,7 @@
     <!-- Preloader -->
     <!-- <div id="preloader">
         <div id="loader"></div>
-    </div>
+    </div> -->
     <header class="header">
         <div class="container">
             <div class="lk-row flex-align">
@@ -23,7 +23,6 @@
                         <ul class="list-button">
                             <li><a href="#">Home</a></li>
                             <li class="mega-menu">
-                                <span class="opener"></span>
                                 <a href="#">
                                     Pages
                                     <i class="fa-solid fa-angle-down"></i>
@@ -48,4 +47,4 @@
                 </div>
             </div>
         </div>
-    </header> -->
+    </header> 

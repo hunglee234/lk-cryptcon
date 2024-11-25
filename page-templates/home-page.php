@@ -175,7 +175,7 @@ get_header(); ?>
 <section class="token-matrics lk-pb-200 relative">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="lk-col-12">
                 <div class="heading-part heading-center wow fadeInUp animated" style="visibility: visible;">
                     <h2>Token Matrics</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua Ut enim ad minim veniam.</p>
@@ -342,5 +342,142 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
+<section class="lk-testimonial lk-pb-200">
+    <div class="container">
+        <div class="lk-row">
+            <div class="lk-col-12">
+                <div class="heading-part heading-center wow fadeInUp animated" style="visibility: visible;">
+                    <h2>What Others Say?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lk-testimonial-content">
+        <div class="testimonial-slider owl-carousel">
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial-detail">
+                    <img src="<?php echo get_field('star','option') ?>" alt="">
+                    <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-thumb">
+                        <img src="<?php echo get_field('author_1','option') ?>" alt="">
+                    </div>
+                    <div class="author-meta">
+                        <h3 class="author-name">Khaac Hung</h3>
+                        <span class="author-postion">
+                            Founder & CEO
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php get_template_part( 'sections/blog/our-latest-news') ?>
+<?php get_template_part('sections/brand/trusted-brand') ?>
+<?php get_template_part('sections/newsletter') ?>
 <?php get_footer(); ?>

@@ -16,6 +16,14 @@ body {
   background-color: #231c6f;
 }
 
+ul li {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
 a {
   outline: none !important;
   cursor: pointer;
@@ -161,13 +169,11 @@ a {
   padding: 36px 0px;
   font-size: 16px;
   font-weight: 500;
+  position: relative;
 }
 
-.header .nav-menu ul .last-list-button {
-  padding: 8px 32px;
-  background: #d94934;
-  border-radius: 6px;
-  border: 2px solid #d94934;
+.header .mega-menu a {
+  margin-right: -7px;
 }
 
 .text-center {
@@ -1968,6 +1974,10 @@ l .blog-comment-box .blog-comment-detail {
   animation: slide 30s linear infinite;
 }
 
+.brand-logo-part:hover .brand-slider {
+  animation-play-state: paused;
+}
+
 .brand-logo-part .brand-slider .brand-logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2004,6 +2014,11 @@ l .blog-comment-box .blog-comment-detail {
 .brand-logo-part {
   position: relative;
   overflow: hidden;
+  display: flex;
+}
+
+.brand-logo-part .brand-slider .brand-logo img:hover {
+  opacity: 1;
 }
 
 .brand-slider {
@@ -2216,4 +2231,172 @@ l .blog-comment-box .blog-comment-detail {
 .our-team img {
   width: 100%;
   display: block;
+}
+
+.team-box .team-img {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+/*Team-sider   owl carousel*/
+
+.team-slider .owl-stage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.lk-testimonial-content .testimonial-slider .owl-stage {
+  display: flex;
+}
+
+.team-slider .owl-item {
+  flex: 0 0 33%;
+  max-width: 33%;
+  padding: 0 20px;
+}
+
+.team-box .team-content {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.team-box .team-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.team-box .team-des {
+  font-size: 18px;
+  display: block;
+  line-height: 22px;
+  text-transform: capitalize;
+  padding-top: 8px;
+  padding-bottom: 22px;
+}
+
+.testimonial-slider .owl-dots.disabled {
+  display: none;
+}
+.team-slider .owl-nav.disabled,
+.team-slider .owl-dots.disabled {
+  display: none;
+}
+
+/*Testimonial Slider*/
+
+.owl-carousel .owl-item img {
+  width: auto !important;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.lk-testimonial-content {
+  padding: 0px 40px;
+}
+
+.testimonial-slider .testimonial-box {
+  background-color: #29217e;
+  border: 1px solid #2f268e;
+  border-radius: 40px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-box .testimonial-detail p {
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 35px;
+}
+
+.testimonial-box .testimonial-author {
+  padding-top: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-box .testimonial-author .author-thumb {
+  width: 50px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.testimonial-box .testimonial-author .author-thumb img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.testimonial-box .testimonial-author .author-meta .author-name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.testimonial-box .testimonial-author .author-meta {
+  width: calc(100% - 50px);
+  padding-left: 18px;
+}
+
+.testimonial-box .testimonial-author .author-meta .author-postion {
+  font-size: 14px;
+  color: #d3d2e2;
+  line-height: 18px;
+}
+
+.owl-carousel .owl-nav {
+  padding-top: 65px;
+  text-align: center;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #d3d2e2 !important;
+  background-color: transparent !important;
+  position: relative;
+  border-radius: 100%;
+  font-size: 0px !important;
+  margin: 0px 7px;
+  line-height: 23px !important;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.owl-carousel .owl-nav .owl-prev::after {
+  content: "\f104";
+  font-family: fontawesome;
+  font-size: 14px;
+}
+
+.owl-carousel .owl-nav .owl-next::after {
+  content: "\f105";
+  font-family: fontawesome;
+  font-size: 14px;
+}
+
+.main-menu .mega-menu a {
+  display: flex !important;
+  align-items: center;
+}
+
+.mega-menu .fa-angle-down {
+  padding-left: 7px;
+  font-size: 17px;
+  padding-right: 7px;
 }
