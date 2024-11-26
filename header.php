@@ -9,7 +9,7 @@
     <!-- Preloader -->
     <!-- <div id="preloader">
         <div id="loader"></div>
-    </div> -->
+    </div> --> 
     <header class="header">
         <div class="container">
             <div class="lk-row flex-align">
@@ -18,8 +18,8 @@
                         <img src="<?php echo get_field('logo_main','option') ?>" alt="Logo">
                     </a>
                 </div>
-                <div class="main-menu">
-                    <div class="nav-menu lk-col-8">
+                <div class="main-menu lk-col-8">
+                    <div class="nav-menu">
                         <ul class="list-button">
                             <li><a href="#">Home</a></li>
                             <li class="mega-menu">
